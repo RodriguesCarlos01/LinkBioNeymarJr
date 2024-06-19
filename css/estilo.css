@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --segunda-secao:'Montserrat', sans-serif;
+    --primeira-secao: 'Ysabeau Infant', sans-serif;
+
+    --textos: #fff;
+    --textos-tabela:#ffffffcc;
+    --sombra-titulo: #000000;
+    --sombra-subtitulo: #000000cc;
+    --tranparencia: #0200006e;
+    --borda-amarela:#ffdf00;
+    --borda-verde: #009c3b;
+}
+
+
