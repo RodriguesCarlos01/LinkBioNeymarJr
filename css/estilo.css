@@ -16,33 +16,50 @@
   --borda-verde: #009c3b;
 }
 
+.container-video {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .container-video video{
 	position: absolute;
 	z-index: -1;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	object-fit: cover;
 }
 
-.container-titulo{
-	width: 400px;
-	height: 300px;
-	margin: 0 auto;
-	padding-top: 50px;
-	text-align: center;
+.container-info{
+	width: 768px;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 10px;
 }
 
-.container-imagem{
+.container-titulo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+ .container-imagem{
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto;
 	background-image: url(../assets/neymar.jpg);
+	background-position: center;
 	background-size: cover;
-}
+} 
 
 .container-imagem::before{
 	content: "";
@@ -61,10 +78,11 @@
 }
 
 .container-titulo h1{
+	position: relative;
 	font-size: 70px;
 	color: var(--textos);
 	font-family: var(--primeira-secao);
-	text-shadow: 3px 6px 1px var(--sombra-titulo);
+	text-shadow: 2px 6px 3px var(--sombra-titulo);
 	
 }
 .container-titulo{
@@ -79,8 +97,8 @@
 	height: 5px;
 	position: absolute;
 	background: linear-gradient(90deg, var(--borda-amarela) , var(--borda-verde));
-	left: 545px;
-	bottom: 315px;
+	left: 5px;
+	bottom: 2px;
 	border-radius: 4px;
 }
 
@@ -90,14 +108,14 @@
 }
 
 .container-links{
-	max-width: 768px;
+  max-width: 768px;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 10px;
-	margin: 0 auto;
-	padding-bottom: 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 	
 }
 
@@ -109,7 +127,7 @@
   align-items: center;
   gap: 5px;
 
-	font-family: var(--primeira-secao);
+  font-family: var(--primeira-secao);
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -146,8 +164,6 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: 40px;
-
-
 
 	background-image: url(../assets/imagem-de-fundo.jpg);
 	background-size: cover;
